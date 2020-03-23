@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/ajustes.js"></script>
+    <script src="js/opciones.js"></script>
+    <script src="js/peticiones.js"></script>
+    <title>Cinepedia</title>
+</head>
+<body>
+    <div id="divIntro">
+        <img src="media/titulo.png" alt="título" id="tituloImgIntro">
+        <div id="barraProgreso">
+            <progress id="barra" value="0" max="100">
+          </div>
+
+    </div>
+    <div id="divBuscar">
+        <section id="contenedorBuscar">
+                <input id="cajaBuscar" type="search" name="Buscar" placeholder="Buscar por título"/>
+                </span><button id="botonBuscar"></button>
+                <div>
+                    <select id="selectTipo">
+                        <option value="movie">Tipo:Película</option>
+                        <option value="series">Serie</option>
+                        <option value="episode">Episodio</option>
+                    </select>
+                </div>
+                <div>
+                    <select id="selectAnho">
+                        <option value="Todos">Año:Todos</option>
+                    </select>
+                </div>    
+        </section>
+        <div><h4 id="mensaje2"></h4></div>
+        <div><h4 id="mensaje"></h4></div>
+        <section id="resultado">
+            <div class="primeraFila">
+                <div class="encabezado">Título:</div><div id="titulo"></div>
+            </div>
+            <div class="segundaFila">
+                <div class="encabezado">Director:</div><div id="director"></div>
+                <div class="encabezado">Año:</div><div id="anho"></div>
+            </div>
+            <div id="poster"></div>
+        </section>
+    </div>
+    <div id="divConsultar">  
+    <h4 id="mensaje2">Historial de consultas en la sesion:</h4>
+        <table id="tablaConsultas">
+            <tr>
+              <th id="columnaTit">Titulo</th>
+              <th id="columnaDir">Director</th>
+              <th id="columnaAnho">Año</th>
+            </tr>
+            
+        </table>
+    </div>
+    <div id="divFicha">
+        <div id="fichaCompleta">Ficha completa</div>
+        <button id="botonFichaCompleta"></button>
+        <div id="datosFichaCompleta">
+            <div class="filaFichaCompleta">
+                <div class="encabezado">Título:</div><div id="tituloFicha"></div>
+            </div>
+            <div class="filaFichaCompleta">       
+                <div class="encabezado">Género:</div><div id="generoFicha"></div>
+            </div>
+            <div class="filaFichaCompleta">       
+                <div class="encabezado">Año:</div><div id="anhoFicha"></div>
+            </div>
+            <div class="filaFichaCompleta">
+                <div class="encabezado">Director:</div><div id="directorFicha"></div>
+            </div>
+            <div class="filaFichaCompleta">
+                <div class="encabezado">Guionista:</div><div id="guionistaFicha"></div>
+            </div>
+            <div class="filaFichaCompleta">       
+                <div class="encabezado">Duración:</div><div id="duracionFicha"></div>
+            </div>
+            <div class="filaFichaCompleta">       
+                <div class="encabezado">Actores:</div><div id="actoresFicha"></div>
+            </div>
+            
+
+        </div>
+    </div>
+    </div>
+    <div id="divAjustes">
+        <div class="filaAjustes">
+            <div class="encabezadosAjustes">Interfaz</div>
+            <hr class="separadorAjustes">
+            <div><h3 id="textoAjustesModoOscuro">Activar modo oscuro</h3></div>
+            <label class="checkAjuste">
+                <input type="checkbox" id="checkboxModoOscuro">
+                <span class="interruptor"></span>
+            </label> 
+        </div>
+        <div class="filaAjustes">
+            <div class="encabezadosAjustes">Filtros</div>
+            <hr class="separadorAjustes">
+            <div id="textoAjustesFiltroTipo">Desactivar filtro: Tipo</div>
+            <label class="checkAjuste">
+                <input type="checkbox" id="checkboxFiltroTipo" data-bind="checked: params.availToStream" checked>
+                <span class="interruptor"></span>
+            </label> 
+        <div> 
+            <div id="textoAjustesFiltroAnho">Desactivar filtro: Año</div>
+            <label class="checkAjuste">
+                <input type="checkbox" id="checkboxFiltroAnho" data-bind="checked: params.availToStream" checked>
+                <span class="interruptor"></span>
+            </label> 
+        </div> 
+        </div>
+        <div class="filaAjustes">
+            <div class="encabezadosAjustes">Historial de busquedas</div>
+            <hr class="separadorAjustes">
+            <div id="textoAjustesBorrar">Historial vacio</div>
+            <button id="botonBorrar"></button>
+            
+        </div>
+    </div>
+    <div id="divInfo">
+        <img src="media/titulo.png" alt="título" id="tituloImg">
+        <div><h4 class="textoInfo">Aplicación realizada por:</h4></div>
+        <div><h4 class="textoInfo">Jorge Pérez González</h4></div>
+        <div><h4 class="textoInfo">Máster en Java y Administración de Bases de Datos – Oficial de Oracle. MJO </h4></div>
+        <img src="media/cice.jpg" alt="título" id="cice">
+    </div>
+    <div id="menuLateral">
+        <div id="menuEncabezado">
+            <div id="menu">MENU</div><img id="icoMenu" src="media/menu.png">
+            <hr id="separadorMenu"/>
+        </div>
+        <div>
+            <h3 id="textoLateral">MENU</h3>
+        </div>
+        <div id="menuOpciones">
+            <a>
+                <button class="botonMenu" type="button" id="buscar">Buscar<img class="ico" src="media/search.png"></button>
+                <button class="botonMenu" type="button" id="consultar">Consultas<img class="ico" src="media/doc.png"></button>
+                <button class="botonMenu" type="button" id="ajustes">Ajustes<img class="ico" src="media/ajustes.png"></button>
+                <button class="botonMenu" type="button" id="informacion">Acerca de<img class="ico" src="media/about.png"></button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

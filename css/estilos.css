@@ -1,0 +1,752 @@
+html {
+    width: 100%;
+    height: auto; 
+    padding-right: 16%; 
+
+}
+body {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+
+#menuLateral {
+    position: absolute;
+    left: -40%;
+    top: 0px;
+    background-color: #76048e;
+    opacity: 0.9;
+    width: 50%;
+    height: 100vh;
+    -webkit-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    -ms-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    transition: all 200ms ease-in;
+    
+}
+
+#separadorMenu {
+    width:95%;
+    size:5px;
+    border-color: white;
+}
+
+hr #separador {
+    width:95%;
+    size:5px;
+    border-color: #FF006F;
+}
+
+#directorFicha, #anhoFicha, #guionistaFicha, #generoFicha, #duracionFicha, #actoresFicha {
+    float: left;
+    font-size: 16px; 
+    font-family: sans-serif;
+    font-weight: normal;
+    text-indent: 10px;
+    text-align: left;
+    color: #600374;
+}
+
+#menuEncabezado {
+    padding-top: 5px;
+}
+
+#menuOpciones {
+    position: absolute;
+}
+
+#menu {
+    margin-left: 10px;
+    display:inline;
+    font-size: 16px; 
+    color: white;
+    opacity: 0.95;
+    font-family: sans-serif;
+}
+
+#divIntro {
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    margin-top: 20%;
+    padding-top: 30%;
+    padding-bottom: 30%;
+    padding-left: 12%;
+    padding-right: 20%;
+    
+
+}
+
+#divBuscar {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left:-100%;
+    top:0px;
+    padding-left: 10%;
+    padding-right: 2%;
+    background-image:url("../media/fondo.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #696969;
+}
+
+#divConsultar {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    left:-100%;
+    top:0px;
+    padding-left: 10%;
+    background-image:url("../media/fondo.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#divAjustes {
+    position: absolute;
+    width: 90%;
+    height: 100vh;
+    left:-100%;
+    top:0px;
+    padding-left: 8%;
+    background-image:url("../media/fondo.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+#divFicha {
+    visibility: hidden;
+    position: absolute;
+    width: 110%;
+    height: 100%;
+    margin-left: -2%;
+    bottom:-86%;
+    border: 2px solid #FF006F;
+    background-image:url("../media/fondo.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    -ms-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    transition: all 200ms ease-in;
+}
+
+
+#divInfo {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    left:-100%;
+    top:0px;
+    padding-left: 10%;
+    background-image:url("../media/fondo.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+#tituloImg {
+    display: inline-block;
+    margin-top: 6%;
+    margin-left: 5%;
+    max-width: 68%;
+    max-height: 150px;
+    height: auto;
+    
+}
+
+#tituloImgIntro {
+    display: inline-block;
+    margin-top: 6%;
+    margin-left: 5%;
+    max-width: 68%;
+    max-height: 150px;
+    height: auto;
+    
+}
+#barraProgreso { 
+    height: 10%; 
+    width: 80%;
+    margin-left: 8%;
+	position: relative;
+	
+}
+
+progress {
+    width: 80%;
+    margin: 2em auto;
+    padding: 2px;
+    border: 0 none;
+    background: #696969;
+    border-radius: 14px;
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
+    
+}
+
+
+
+progress::-moz-progress-bar {
+    border-radius: 4px;
+    background: #FF006F;
+    box-shadow: inset 0 -2px 4px rgba(0,0,0,0.4), 0 2px 5px 0px rgba(0,0,0,0.3);
+    
+  
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    progress {
+      height: 25px;
+    }
+  }
+    progress::-webkit-progress-bar {
+      background: transparent;
+  }  
+    progress::-webkit-progress-value {  
+        border-radius: 12px;
+        background: #FF006F;
+        box-shadow: inset 0 -2px 4px rgba(0,0,0,0.4), 0 2px 5px 0px rgba(0,0,0,0.3);
+     
+}
+
+
+.botonMenu {
+    margin-top:28px;
+    margin-left: 10px;
+    width: 90%;
+    height: 4em;
+    background-color: #600374;
+    border: none; 
+    border-radius: 2px;
+    color: white; 
+    padding: 10px 2px;
+    text-align: left;
+    text-indent: 5%;
+    font-size: 16px; 
+    font-family: sans-serif;
+    cursor: pointer; 
+  }
+
+.botonMenu:hover {
+    background-color: RoyalBlue;
+    border: 2px solid #FF006F;
+}
+
+
+.ico {
+    
+    float: right;
+    padding: 2px 10px;
+    height: 15px;
+    width: 15px;  
+ } 
+
+#icoMenu {
+    
+    float: right;
+    padding-right: 4px;
+    height: 22px;
+    width: 22px; 
+ } 
+
+#textoLateral {
+    visibility: hidden;
+    display: block;
+    float: right;
+    margin-top: 30px;
+    margin-right: -12px;
+    font-size: 22px; 
+    font-family: sans-serif;
+    color:white;
+    transform: rotate(270deg);
+    opacity: 0.2;
+
+}
+
+#contendorBuscar {
+    display: block;
+    grid-template-columns: 1fr auto;
+}
+
+#cajaBuscar {
+    float: left;
+    margin-right: auto;
+    margin-left: 4%;
+    margin-top: 12%;
+    width: 60%;
+    height: 40px;
+    border: 2px solid #696969;
+    border-radius: 6px;
+    font-size: 16px; 
+    font-family: sans-serif;
+    text-indent: 20px;   
+} 
+
+#cajaBuscar:hover {
+    border: 2px solid #ff006f; 
+    width: 62%;
+    height: 44px;   
+} 
+
+#botonBuscar {
+    
+    display: inline-block;
+    margin-right: auto;
+    margin-top: 12%;
+    margin-left: 10px;
+    width: 10%;
+    height: 40px;
+    border: none;
+    border-radius: 6px;
+    background-image: url("../media/searchColor.png");
+    background-color: rgba(0, 0, 0, 0);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#botonBuscar:hover {
+    background-image: url("../media/search.png");
+    background-color: #76048e;  
+} 
+
+#mensaje {
+    margin-top: 16%;
+    margin-left: 4%;
+    margin-bottom: 10%;
+    margin-right: 8%;
+    padding-right: 20%;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-style: italic;
+    color: #FF006F;
+    text-indent: 20px;   
+}
+
+#mensaje2 {
+    margin-top: 16%;
+    margin-left: 4%;
+    margin-bottom: 10%;
+    margin-right: 8%;
+    padding-right: 20%;
+    font-size: 16px; 
+    font-family: sans-serif;
+    font-style: italic;
+    color: #600374;
+    text-align: left;
+    text-indent: 12px;
+      
+}
+
+#resultado {
+    visibility: hidden;
+}
+
+#selectTipo {
+    float: left;
+    margin-right: auto;
+    margin-left: 5%;
+    margin-top: 4%;
+    background-color: #696969;
+    width: 130px;
+    height: 40px;
+    font-size: 16px; 
+    font-family: sans-serif;
+    text-indent: 8px; 
+    color: white;
+    border-radius: 6px;
+        
+} 
+
+#selectAnho{
+    float: right;
+    margin-right: 28%;
+    margin-left: auto;
+    margin-top: 4%;
+    background-color: #696969;
+    width: 100px;
+    height: 40px;
+    font-size: 16px; 
+    font-family: sans-serif;
+    text-indent: 8px; 
+    color: white;
+    border-radius: 6px;
+    
+}
+
+#selectTipo:focus {
+    background-color: #FF006F;
+    width: 140px;
+    height: 44px;
+}
+
+#selectAnho:focus {
+    background-color: #FF006F;
+    width: 110px;
+    height: 44px;
+}
+
+#selectTipo>option, #selectAnho>option {
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+#resultado {
+    visibility: hidden;
+    margin-top: -6%;  
+    margin-left: 4%;
+} 
+
+.primeraFila {
+    display: flex;
+} 
+
+.segundaFila {
+    display: flex;
+} 
+
+.encabezado {
+    float: left;
+    font-size: 14px; 
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #696969;
+}
+
+#titulo {
+    float: right;
+    margin-right: 20%;
+    margin-top: -18px;
+    font-size: 14px; 
+    font-family: sans-serif;
+    font-weight: bold;
+    text-indent: 8px;
+    text-align: left;
+    color: #600374;
+}
+
+#director{
+    float: right;
+    margin-right: 14%;
+    margin-top: -18px;
+    margin-right: 10%;
+    margin-left: 8px;
+    font-size: 14px; 
+    font-family: sans-serif;
+    font-weight: normal;
+    text-align: left;
+    color: #600374;
+}
+
+#anho {
+    float: right;
+    margin-right: 14%;
+    margin-top: -18px;
+    margin-left: 8px;
+    font-size: 14px; 
+    font-family: sans-serif;
+    font-weight: normal;
+    text-align: left;
+    color: #600374;
+}
+
+#poster {
+    float: left;
+}
+
+#imagenPoster {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+    max-height: 30%;
+}
+
+#fichaCompleta {
+    float: left;
+    vertical-align: top;
+    margin-top: 1%;
+    margin-left: 30%;
+    text-align: center;
+    font-size: 22px; 
+    font-family: sans-serif;
+    font-weight: bolder;
+    color:#600374;
+}
+
+#botonFichaCompleta {
+    float: right;
+    margin-right: 20%;
+    margin-top: -1%;
+    width: 8%;
+    height: 36px;
+    border: none;
+    border-radius: 6px;
+    background-image: url("../media/flechaUp.png");
+    background-color: rgba(0, 0, 0, 0);
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation-name: fechaMover;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-play-state: paused;
+    animation-timing-function: 2;
+}
+
+@keyframes fechaMover {
+    0% {margin-top: -1%;}
+    25% {margin-top: -4%;}
+    50% {margin-top: -1%;}
+    75% {margin-top: -4%;}
+    100% {margin-top: -1%;}
+}
+
+#datosFichaCompleta {
+    display: block;
+    padding-top: 16%;
+    margin-top: 4%;
+    margin-left: 12%;
+    margin-right: 4%;
+    height: 80%;
+    width: 80%;
+    
+}
+
+.filaFichaCompleta {
+    display: flex;
+    margin-top: 8%;
+    margin-right: 4%;
+    
+}
+
+#tituloFicha {
+    float: left;
+    font-size: 16px; 
+    font-family: sans-serif;
+    font-weight: bold;
+    text-indent: 10px;
+    text-align: left;
+    color: #600374;
+}
+
+#directorFicha, #anhoFicha, #guionistaFicha, #generoFicha, #duracionFicha, #actoresFicha {
+    float: left;
+    height: 10px;
+    
+}
+
+
+.valoresFicha {
+    margin-top: 0px;
+    margin-right: 2%;
+    font-size: 16px; 
+    font-family: sans-serif;
+    font-weight: normal;
+    text-indent: 10px;
+    text-align: left;
+    color: #600374;
+    
+}
+
+#tablaConsultas {
+    margin-top: 6%;
+    padding-right: 12%;
+}
+
+th {
+    background-color:  #600374;
+    color: white;
+    font-size: 12px; 
+    font-family: sans-serif;
+    font-weight: bold;
+    text-indent: 6px;
+    text-align: left;
+    height: 28px;
+}
+
+#columnaTit {
+    width: 40%;
+}
+
+#columnaDir{
+    width: 16%;
+}
+
+#columnaAnho {
+    width: 12%;
+}
+
+td {
+    border-bottom: 2px solid #FF006F;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size: 12px; 
+    font-family: sans-serif;
+    font-weight: normal;
+    text-indent: 6px;
+    text-align: left;
+    color: #600374;
+}
+
+.filaAjustes {
+
+    display: block;
+    margin-top: 10%;
+    margin-bottom: 8%;
+    margin-right: 2%;
+    width: 90%;
+    height: 18%;
+
+}
+
+.encabezadosAjustes {
+    display: block;
+    font-size: 20px; 
+    font-family: sans-serif;
+    font-weight: bold;
+    text-indent: 8%;
+    color: black;
+}
+
+.separadorAjustes {
+    display: block;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    margin-right: 8%;
+    width: 86%;
+    size: 0.5px;
+    border-color: #696969;
+}
+
+#textoAjustesModoOscuro,
+#textoAjustesFiltroTipo,
+#textoAjustesFiltroAnho,
+#textoAjustesBorrar {
+    float: left;
+    margin-top: 4%;
+    margin-left: 4%;
+    margin-bottom: 4%;
+    width: 65%;
+    height: 10%;
+    font-size: 20px; 
+    font-family: sans-serif;
+    font-weight: normal;
+    color: black;
+}
+
+.checkAjuste {
+    position: relative;
+    display: inline-block;
+    margin-top: 4%;
+    width: 54px;
+    height: 32px;
+    border: 3px solid #600374;
+    border-radius: 34px;
+    margin-right: 2%;
+}
+  
+.checkAjuste  input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+.interruptor {
+    position: absolute;
+    cursor: pointer;
+    width: 54px;
+    height: 32px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-right: 2%;
+    background-color: #ccc;
+    border-radius: 34px;
+    border-color: #600374;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.interruptor:before {
+    position: absolute;
+    content: "";
+    height: 24px;
+    width: 24px;
+    left: 4px;
+    bottom: 4px;
+    border-radius: 50%;
+    border-color: #600374;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+input:checked + .interruptor {
+    background-color: #ff006f;
+}
+  
+input:focus + .interruptor {
+    box-shadow: 0 0 1px #ff006f;
+}
+  
+input:checked + .interruptor:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+#botonBorrar {
+    float: right;
+    margin-top:12px;
+    margin-right: 14%;
+    width: 48px;
+    height: 48px;
+    border: none; 
+    border-radius: 10px;
+    background-image: url("../media/borrarVacio.png");
+    background-color: rgba(0, 0, 0, 0);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+.botonBorrar:hover {
+    width: 70px;
+    height: 70px;
+    border: 2px solid #FF006F;
+}
+
+.textoInfo {
+    float: left;
+    margin-top: 10%;
+    margin-left: 4%;
+    margin-bottom: 4%;
+    width: 75%;
+    height: 10%;
+    font-size: 18px; 
+    font-family: sans-serif;
+    font-weight: normal;
+    text-align: center;
+    color: #600374;
+}
+
+#cice{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 14%;
+    max-width: 68%;
+    max-height: 150px;
+    height: auto;
+    
+}
+  
+  
